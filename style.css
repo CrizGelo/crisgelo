@@ -1,0 +1,101 @@
+body{
+	background-image: url(star.gif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+img{
+	margin-top:10px;
+}
+
+button:hover{
+	background-color: #1b1e24;
+}
+
+button{
+	border-color: #526080;
+	border-style: inset;
+	color: white;
+	position: absolute;
+	background-color: #123075;
+	width: 120px;
+	height: 50px;
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: bold;
+	border-width: 5px;
+	border-radius: 12px;
+}
+.standby{
+	margin-top: 400px
+}
+.chillwalk{
+	margin-top: 400px;
+	margin-left: 140px
+}
+.hardpunch{
+	margin-top: 600px;
+	margin-left: 140px
+}
+.lightpunch{
+	margin-top: 800px;
+	margin-left: 140px;
+}
+.transform{
+	margin-top: 700px;
+	margin-left: 140px;
+}
+.charge{
+	margin-top: 500px;
+	margin-left: 140px;
+}
+.walking{
+	margin-top: 500px;
+}
+
+.spin{
+	margin-top: 600px;
+}
+.jump{
+	margin-top: 700px;
+}
+.mediumpunch{
+	margin-top:800px;
+}
+.name{
+	margin-top: 600px;
+	margin-left: 280px;
+
+}
+
+h1 {
+	  position: relative;
+	  justify-self: center;
+	  ma
+    padding:0;
+    margin: 0;
+   	 grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: Raleway;
+    font-size: 80px;
+    text-transform: uppercase;
+    animation: glow 1s ease-in-out infinite alternate;
+    color: #910401 ;
+    font-weight: bold;
+    align-self: center;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #081e59;
+    }
+    to {
+      text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
+  }
+}
+
+#Cancelled{
+	background-color: black;
+}

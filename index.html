@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cris |Pop Up Message</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet"  href="https://fonts.google.com/specimen/Raleway?preview.size=43">
+</head>
+<body>
+	<marquee behavior="scroll" direction="up" 
+		style="
+		position: absolute;
+		height: 450px;
+		width: 400px;
+		margin-top: 0px;
+		font-size: 20PX;
+		color: white;
+
+		">
+		<span>	Optimus Prime </span>is the leader of the main group of Autobots in the iteration of the Transformers franchise primarily marked by the 2010 computer-animated series Transformers: Prime on The Hub. Optimus Prime was created as the last of the Thirteen Primes, the first generation of Transformers, each created directly by Primus as a band of unique warriors to combat and defeat Unicron. Upon his creation, Optimus united the Thirteen by his greeting All are one. While all of the other members of the Thirteen each possessed unique abilities and artifacts, Optimus wielded no special powers or weapons. It was only his vision and courage that allowed the Thirteen to finally defeat Unicron. Reborn through the Well of All Sparks, Orion Pax became Optimus Prime, a veteran military commander and second in command who wields an ion blaster and a double-bladed Energon axe. He became the leader of the Autobots after Sentinel Zeta Prime fell in battle, but is not certain he wants the responsibility.
+
+		In the Transformers: Prime series, he can form bladed weapons or blasters from his hands. He has a telescopic vision and turns into a long-nose semi-trailer truck. Before the Great War, Optimus Prime was originally known as Orion Pax; a young data clerk who worked in Iacon, under the wing of Alpha Trion. Orion was chosen by the High Council and became "Optimus Prime", upon being entrusted with the Matrix of Leadership by Primus himself.</marquee>
+
+  <!--OPTIMUS PRIME-->
+
+	<center><h1 id = "optimusprime2"> OPTIMUS PRIME </h1></center>
+	
+
+	<!--SKILLS-->
+
+
+	<button class="charge" onclick = "document.getElementById('optimusprime').src = 'Charge.webp' " > 	
+		 CHARGE
+	</button>
+	
+
+	<button class="walking" onclick = "document.getElementById('optimusprime').src = 'walking.webp' ">
+		WALK
+	</button>
+
+	<button class="standby" onclick = "document.getElementById('optimusprime').src = 'standby.webp' ; stand() " >
+		STAND
+		
+
+	</button>
+	<button class = "transform" onclick = "document.getElementById('optimusprime').src = 'transform.webp'">
+		TRANSFORM
+	</button>
+
+	<button class="spin" onclick = "document.getElementById('optimusprime').src = 'spinrobot.webp'">
+		SPIN
+	</button>
+	<button class = "lightpunch" onclick = "document.getElementById('optimusprime').src = 'lightpunch.webp';">
+		PUNCH
+	</button>
+	<button class = "hardpunch" onclick = "document.getElementById('optimusprime').src = 'hardpunch.webp'; alert1()" >
+		BELLY PUNCH
+	</button>
+	<button class = "chillwalk" onclick = "document.getElementById('optimusprime').src = 'chillwalk.webp'">
+		CHILL WALK
+	</button>
+
+	<button class = "jump" onclick = "document.getElementById('optimusprime').src = 'Jump.webp'">
+		JUMP
+	</button>
+	<button class = "mediumpunch" onclick = "document.getElementById('optimusprime').src = 'mediumpunch.webp'">
+		MEDIUM PUNCH
+	</button>
+	
+	<button class="name" onclick="Inputname()">Change Name</button>
+	
+
+	<center><img id = "optimusprime" src="standby.webp" ></center>
+
+
+	
+   <!--JS ALERT-->
+
+
+   		 <script type="text/javascript">
+   		 	function alert1(){
+   		 		alert("Do you want to initiate belly punch?")
+
+   		 	}
+
+   		 </script>
+
+
+    <!--JS CONFIRM-->
+
+    		<script type="text/javascript">
+
+    					function stand(){
+    					var Attack;
+
+    					if(confirm("Do you want to stand?") == true){
+    						Attack = confirm1();
+
+    					}else {
+    						Attack = cancelled();
+    						}
+    					}
+    					function confirm1(){
+    						alert("Stanby Initiate")
+    					}
+    					function cancelled(){
+    						alert("Cancelled")
+    					}
+    		</script>
+
+		
+    	<!--JS PROPMT-->
+
+
+    		<script type="text/javascript">
+    					function Inputname(){
+    						var Name = prompt("Enter to name the Characther: ");
+    						if (Name == null|| Name == ""){
+    							Name = alert5();
+    						}else {
+    							document.getElementById("optimusprime2").innerHTML = Name; 
+    						}
+
+
+    					}
+    					function alert5(){
+ 								alert("Input Name!")
+    					}
+
+
+
+    		</script>
+</body>
+</html>
